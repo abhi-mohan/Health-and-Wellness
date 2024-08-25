@@ -1,0 +1,135 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    height: 100vh;
+    background: url('https://media.licdn.com/dms/image/D4D12AQEzBgIZ13UOig/article-cover_image-shrink_600_2000/0/1692875112654?e=2147483647&v=beta&t=9iAB5V3QOToWzw8tRI8YYP-EMdNTdMqOQyE06XaZhhU') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero .title {
+    font-size: 3rem;
+    font-family: 'Georgia', serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.center-text {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: 'Verdana', sans-serif;
+    color: #333;
+}
+
+.habit-grid, .tips-grid, .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.habit-grid div, .tips-grid div, .blog-grid div {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.habit-grid img, .tips-grid img, .blog-grid img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; /* Adjust as needed */
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.review-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #e2e2e2;
+    border-radius: 5px;
+}
+
+.contact-section {
+    background: #fafafa;
+    padding: 2rem;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-section input, .contact-section textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: #333;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
